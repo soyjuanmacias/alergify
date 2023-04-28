@@ -1,0 +1,24 @@
+{
+  "name": "alergify",
+  "version": "1.0.0",
+  "description": "Web application to measure the level of pollen in Madrid",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass styles.scss:styles.css -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soyjuanmacias/alergify.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soyjuanmacias/alergify/issues"
+  },
+  "homepage": "https://github.com/soyjuanmacias/alergify#readme",
+  "dependencies": {
+    "sass": "^1.62.1"
+  }
+}
