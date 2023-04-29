@@ -4,10 +4,7 @@
 branch="$(git symbolic-ref --short -q HEAD)"
 
 if [ "$branch" = "main" ]; then
-<<<<<<< Updated upstream
   echo "${RED} You are on main branch"
-=======
->>>>>>> Stashed changes
   echo "You can't commit directly to master branch"
   exit 1
 fi
