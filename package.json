@@ -4,7 +4,7 @@
   "description": "Web application to measure the level of pollen in Madrid",
   "main": "index.js",
   "scripts": {
-    "sass": "sass styles.scss:styles.css -w",
+    "sass": "sass sass/styles.scss:public/styles.css -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
