@@ -7,18 +7,23 @@
     padding-top: $spacing_xxxl;
 
     main {
+        @include center;
         background-color: white;
         z-index: $zIndex_md;
         position: relative;
+        min-height: rem(400);
+        min-width: rem(300);
 
-        width: 600px;
+        width: 80%;
         margin: 0 auto;
-        padding: $spacing_lg;
+        padding: $spacing_md;
         margin-top: $spacing_xxxl;
         border-radius: $border_md;
 
         @include desktop {
-            padding: $spacing_xxxl;
+            padding: $spacing_xxl $spacing_xl;
+            width: 600px;
+            min-width: rem(600);
         }
     }
 

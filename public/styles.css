@@ -115,18 +115,25 @@ header h1 {
   padding-top: 8rem;
 }
 .app-container main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: white;
   z-index: 10;
   position: relative;
-  width: 600px;
+  min-height: 25rem;
+  min-width: 18.75rem;
+  width: 80%;
   margin: 0 auto;
-  padding: 1.5rem;
+  padding: 1rem;
   margin-top: 8rem;
   border-radius: 1.25rem;
 }
 @media only screen and (min-width: 1200px) {
   .app-container main {
-    padding: 8rem;
+    padding: 4rem 2rem;
+    width: 600px;
+    min-width: 37.5rem;
   }
 }
 .app-container footer {
