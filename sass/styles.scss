@@ -2,29 +2,7 @@
 @use "core/globals";
 @use "core/responsive" as *;
 
-nav {
-    width: $nav_width;
-    margin: 0 auto;
-    position: fixed;
-    top: rem($spacing_xxl);
-    border-radius: $border_md;
-    background-color: aqua;
-    z-index: $zIndex_md;
-    left: $nav-container-spacing;
-    right: $nav-container-spacing;
-    top: 20px;
-    padding: 16px 24px;
-}
-
-header {
-    height: 45vh;
-    background: linear-gradient(
-        135deg,
-        rgb(134, 140, 255) 0%,
-        rgb(67, 24, 255) 100%
-    );
-    position: absolute;
-    width: 100%;
-    border-radius: $border_md;
-    padding: $spacing_xxl;
-}
+@use "components/nav";
+@use "components/header";
+@use "components/app-container";
+@use "components/faq";

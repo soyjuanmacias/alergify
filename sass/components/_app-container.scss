@@ -1,0 +1,28 @@
+@use "../core/variables" as *;
+@use "../core/responsive" as *;
+
+.app-container {
+    background-color: $gray-soft;
+    padding: $spacing_xl;
+    padding-top: $spacing_xxxl;
+
+    main {
+        background-color: white;
+        z-index: $zIndex_md;
+        position: relative;
+
+        width: 600px;
+        margin: 0 auto;
+        padding: $spacing_lg;
+        margin-top: $spacing_xxxl;
+        border-radius: $border_md;
+
+        @include desktop {
+            padding: $spacing_xxxl;
+        }
+    }
+
+    footer {
+        position: relative;
+    }
+}
