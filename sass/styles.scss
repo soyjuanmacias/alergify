@@ -1,10 +1,19 @@
-@import "./core/index";
+@use "core/variables" as *;
+@use "core/globals";
+@use "core/responsive" as *;
 
 nav {
-    width: calc(100vw - 365px);
+    width: $nav_width;
     margin: 0 auto;
     position: fixed;
-    top: rem(40);
+    top: rem($spacing_xxl);
+    border-radius: $border_md;
+    background-color: aqua;
+    z-index: $zIndex_md;
+    left: $nav-container-spacing;
+    right: $nav-container-spacing;
+    top: 20px;
+    padding: 16px 24px;
 }
 
 header {
@@ -16,5 +25,6 @@ header {
     );
     position: absolute;
     width: 100%;
-    border-radius: 20px;
+    border-radius: $border_md;
+    padding: $spacing_xxl;
 }

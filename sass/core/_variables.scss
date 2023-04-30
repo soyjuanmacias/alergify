@@ -1,12 +1,30 @@
+@use "responsive" as *;
+
 // Typography
-$font: 'Noto Sans';
+$font: "Noto Sans";
 
 // Sizes
 $html-font: 16px;
 
-// Breakpoints
-$screen_mobile: 320px;
-$screen_tablet: 768px;
-$screen_tablet_portrait: 992px;
-$screen_desktop: 1200px;
-$screen_desktop_xxl: 1440px;
+// Borders
+$border_md: rem(20);
+
+// Spacing:
+$spacing_sm: rem(4);
+$spacing_md: rem(8);
+$spacing_lg: rem(16);
+$spacing_xl: rem(32);
+$spacing_xxl: rem(64);
+$spacing_xxxl: rem(128);
+
+// Z-Index
+$zIndex_sm: 1;
+$zIndex_md: 10;
+$zIndex_lg: 100;
+$zIndex_xl: 1000;
+$zIndex_xxl: 10000;
+$zIndex_xxxl: 1000000;
+
+// Components
+$nav_width: 90%;
+$nav-container-spacing: calc((100% - $nav_width) / 2);

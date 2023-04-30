@@ -1,4 +1,10 @@
-@use 'variables';
+// @use "variables" as *;
+
+$screen_mobile: 320px;
+$screen_tablet: 768px;
+$screen_tablet_portrait: 992px;
+$screen_desktop: 1200px;
+$screen_desktop_xxl: 1440px;
 
 // SCSS Mixins
 @mixin mobile {
@@ -14,7 +20,7 @@
 }
 
 @mixin tablet_portrait {
-    @media only screen and (min-width: #{$screen_tablet}) {
+    @media only screen and (min-width: #{$screen_tablet_portrait}) {
         @content;
     }
 }
@@ -26,13 +32,13 @@
 }
 
 @mixin desktop_xxl {
-    @media only screen and (min-width: #{$screen_desktop}) {
+    @media only screen and (min-width: #{$screen_desktop_xxl}) {
         @content;
     }
 }
 
-@function rem($px) {
-    @return #{calc(stripUnit($px) / stripUnit(16))}rem;
+@function rem($pxValue) {
+    @return #{calc(stripUnit($pxValue) / stripUnit(16))}rem;
 }
 
 @function rem($value) {
