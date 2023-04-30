@@ -1,0 +1,41 @@
+@use 'variables';
+
+// SCSS Mixins
+@mixin mobile {
+    @media only screen and (min-width: #{$screen_mobile}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media only screen and (min-width: #{$screen_tablet}) {
+        @content;
+    }
+}
+
+@mixin tablet_portrait {
+    @media only screen and (min-width: #{$screen_tablet}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media only screen and (min-width: #{$screen_desktop}) {
+        @content;
+    }
+}
+
+@mixin desktop_xxl {
+    @media only screen and (min-width: #{$screen_desktop}) {
+        @content;
+    }
+}
+
+@function rem($pxValue) {
+    @return #{calc(stripUnit($pxValue) / stripUnit(16))}rem;
+}
+
+@function rem($value) {
+    $remValue: calc($value / 16) + rem;
+    @return $remValue;
+}

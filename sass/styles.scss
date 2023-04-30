@@ -1,0 +1,20 @@
+@import "./core/index";
+
+nav {
+    width: calc(100vw - 365px);
+    margin: 0 auto;
+    position: fixed;
+    top: rem(40);
+}
+
+header {
+    height: 45vh;
+    background: linear-gradient(
+        135deg,
+        rgb(134, 140, 255) 0%,
+        rgb(67, 24, 255) 100%
+    );
+    position: absolute;
+    width: 100%;
+    border-radius: 20px;
+}
