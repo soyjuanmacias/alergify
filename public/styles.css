@@ -62,7 +62,7 @@ nav {
   width: calc(100vw - 365px);
   margin: 0 auto;
   position: fixed;
-  top: rem(40);
+  top: 2.5rem;
 }
 
 header {
