@@ -1,0 +1,8 @@
+@use "../core/variables" as *;
+
+.faq {
+    margin-top: $spacing_xxl;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing_xl;
+}

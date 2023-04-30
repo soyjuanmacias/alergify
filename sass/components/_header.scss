@@ -1,0 +1,22 @@
+@use "../core/variables" as *;
+@use "../core/responsive" as *;
+
+header {
+    background: linear-gradient(
+        135deg,
+        rgb(134, 140, 255) 0%,
+        rgb(67, 24, 255) 100%
+    );
+    position: absolute;
+    border-radius: $border_md;
+    height: 45vh;
+    min-height: rem(300);
+    padding: $spacing_xl;
+    width: $header-width;
+    left: $header-container-spacing;
+    right: $header-container-spacing;
+
+    h1 {
+        text-align: center;
+    }
+}
