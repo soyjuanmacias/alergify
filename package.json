@@ -1,24 +1,48 @@
 {
-  "name": "alergify",
-  "version": "1.0.0",
-  "description": "Web application to measure the level of pollen in Madrid",
-  "main": "index.js",
-  "scripts": {
-    "sass": "sass sass/styles.scss:public/styles.css -w",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/soyjuanmacias/alergify.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/soyjuanmacias/alergify/issues"
-  },
-  "homepage": "https://github.com/soyjuanmacias/alergify#readme",
-  "dependencies": {
-    "sass": "^1.62.1"
-  }
+    "author": "Juan Macías",
+    "description": "Web application to measure the level of pollen in Madrid",
+    "license": "ISC",
+    "main": "index.js",
+    "name": "alergify",
+    "type": "module",
+    "scripts": {
+        "sass": "sass sass/styles.scss:public/styles.css -w",
+        "test": "jest",
+        "prepare": "husky install"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/soyjuanmacias/alergify.git"
+    },
+    "bugs": {
+        "url": "https://github.com/soyjuanmacias/alergify/issues"
+    },
+    "keywords": [],
+    "homepage": "https://github.com/soyjuanmacias/alergify#readme",
+    "dependencies": {
+        "jest": "^29.5.0",
+        "sass": "^1.62.1"
+    },
+    "devDependencies": {
+        "@babel/plugin-transform-modules-commonjs": "^7.21.5",
+        "@commitlint/cli": "^17.6.1",
+        "@commitlint/config-conventional": "^17.6.1",
+        "commitlint": "^17.6.1",
+        "husky": "^8.0.3"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm run test"
+        }
+    },
+    "babel": {
+        "env": {
+            "test": {
+                "plugins": [
+                    "@babel/plugin-transform-modules-commonjs"
+                ]
+            }
+        }
+    },
+    "version": "1.0.0"
 }
