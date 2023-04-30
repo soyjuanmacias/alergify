@@ -31,8 +31,8 @@
     }
 }
 
-@function rem($pxValue) {
-    @return #{calc(stripUnit($pxValue) / stripUnit(16))}rem;
+@function rem($px) {
+    @return #{calc(stripUnit($px) / stripUnit(16))}rem;
 }
 
 @function rem($value) {
