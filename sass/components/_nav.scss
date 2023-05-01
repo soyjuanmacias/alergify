@@ -1,4 +1,5 @@
 @use "../core/variables" as *;
+@use "../core/responsive" as *;
 
 nav {
     backdrop-filter: $bg_blur;
@@ -14,8 +15,15 @@ nav {
     z-index: $zIndex_xxxl;
 
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: $spacing_md;
+    
+    @include desktop {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
     p:first-child {
         font-size: $font-xs;
@@ -23,7 +31,7 @@ nav {
 
     select {
         padding: $spacing_xs $spacing_md;
-        background-color: $gray-soft;
+        background-color: rgba(255, 255, 255, 0.4);
         border-radius: $border_xs;
     }
 }
