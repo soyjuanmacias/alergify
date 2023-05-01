@@ -30,11 +30,6 @@
         "commitlint": "^17.6.1",
         "husky": "^8.0.3"
     },
-    "husky": {
-        "hooks": {
-            "pre-commit": "npm run test"
-        }
-    },
     "babel": {
         "env": {
             "test": {
