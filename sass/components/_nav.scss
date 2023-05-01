@@ -2,6 +2,7 @@
 
 nav {
     backdrop-filter: $bg_blur;
+    -webkit-backdrop-filter: $bg_blur;
     border-radius: $border_md;
     left: $nav-container-spacing;
     margin: 0 auto;
